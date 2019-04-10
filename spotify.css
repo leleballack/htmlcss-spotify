@@ -1,10 +1,11 @@
 * {
-  background-color: #1B1918;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: arial, sans-serif;
 }
+
+/* SHARED */
 
 .ptb-30 {
   padding-top: 30px;
@@ -17,6 +18,8 @@
   font-size: 15px;
 }
 
+/* SIDENAV */
+
 .sidenav {
   background-color: #060505;
   height: 100%;
@@ -25,22 +28,25 @@
   z-index: 1;
   top: 0;
   left: 0;
-  padding-top: 20px;
+  padding: 20px 0 0 32px;
 }
-.sidenav a {
-  padding: 6px 6px 6px 32px;
+.logo img {
+  max-width: 150px;
+  background-color: transparent;
+}
+.menulink a {
+  padding: 6px 6px 6px 0;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 15px;
   color: #818181;
   display: block;
 }
-
-.sidenav img {
-  max-width: 130px;
-  background-color: transparent;
-
+.menulink a:first-child {
+  color: white;
+  padding-left: 10px;
+  border-left: 2px solid green;
 }
-.sidenav i {
+.menulink i {
   padding-right: 20px;
 }
 .btn {
@@ -48,6 +54,7 @@
   border-radius: 15px;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .btn-light {
   background-color: white;
@@ -58,15 +65,19 @@
   color: white;
   border-color: white;
 }
-.sidenav a:last-child {
-  font-size: 15px;
+.cookie a {
+  font-size: 11px;
+  color: white;
 }
 .fa-home, .fa-search, .fa-book {
   color: white;
   background-color: transparent;
 }
 
+/* MAIN SECTION */
+
 main {
+  background-color: #1B1918;
   margin-left: 250px;
   padding-left: 30px;
   color: white;
