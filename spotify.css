@@ -5,6 +5,14 @@
   font-family: arial, sans-serif;
 }
 
+a {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* SHARED */
 
 .ptb-30 {
@@ -13,6 +21,10 @@
 }
 .pb-50 {
   padding-bottom: 50px;
+}
+.plb-20 {
+  padding-left: 20px;
+  padding-bottom: 30px;
 }
 .ft-15 {
   font-size: 15px;
@@ -29,6 +41,7 @@
   top: 0;
   left: 0;
   padding: 20px 0 0 32px;
+  overflow: hidden;
 }
 .logo img {
   max-width: 150px;
@@ -77,12 +90,38 @@
 /* MAIN SECTION */
 
 main {
-  background-color: #1B1918;
+  background-color: #182F34;
   margin-left: 250px;
-  padding-left: 30px;
   color: white;
+  overflow: hidden;
 }
 .list-inline li {
  text-transform: uppercase;
  padding-right: 20px;
+ font-weight: bold;
+ color: grey;
+ letter-spacing: 2px;
+}
+.list-inline li:first-child {
+  color: white;
+}
+.container-flex {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+.music-card {
+  padding-bottom: 30px;
+}
+.music-card img {
+  margin-left: 10px;
+  padding-left: 10px;
+  max-width: 170px;
+}
+.music-card p {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 10px;
 }
