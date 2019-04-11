@@ -155,3 +155,37 @@ footer i {
   padding: 20px 20px 0 0;
   font-size: 18px;
 }
+
+/* RESPONSIVE MEDIA  */
+
+@media all and (max-width: 768px) {
+
+  .sidenav {
+    width: 100px;
+    padding: 10px 0 0 10px;
+  }
+  main {
+    margin-left: 100px;
+  }
+  .sidenav span {
+    display: none;
+  }
+  .menulink i {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .menulink a:first-child {
+    border: none;
+    padding: 0;
+  }
+  .logo img {
+    max-width: 80px;
+  }
+  .cookie {
+    display: none;
+  }
+  .btn {
+
+    font-size: 10px;
+  }
+}
